@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .base { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 96px; font-weight: 700; fill: #e0d7ff; letter-spacing: 18px; }
+      .glitch-r { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 96px; font-weight: 700; fill: none; stroke: #ff2d78; stroke-width: 1.5; letter-spacing: 18px; opacity: 0; }
+      .glitch-b { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 96px; font-weight: 700; fill: none; stroke: #00f5ff; stroke-width: 1.5; letter-spacing: 18px; opacity: 0; }
+      .scanline { fill: none; stroke: #c792ea; stroke-width: 0.4; opacity: 0.08; }
+      .flicker { animation: flicker 4s infinite; }
+      .glitch-anim-r { animation: glitchR 3s infinite; }
+      .glitch-anim-b { animation: glitchB 3s infinite; }
+      .underline-anim { animation: underlineGrow 2s ease forwards; }
+
+      @keyframes flicker {
+        0%,19%,21%,23%,25%,54%,56%,100% { opacity: 1; }
+        20%,24%,55% { opacity: 0.6; }
+      }
+      @keyframes glitchR {
+        0%,90%,100% { opacity: 0; transform: translate(0,0); }
+        91% { opacity: 0.7; transform: translate(-4px, 2px); }
+        92% { opacity: 0; }
+        93% { opacity: 0.5; transform: translate(3px,-1px); }
+        94% { opacity: 0; }
+        95% { opacity: 0.8; transform: translate(-2px, 3px); }
+        96% { opacity: 0; }
+      }
+      @keyframes glitchB {
+        0%,88%,100% { opacity: 0; transform: translate(0,0); }
+        89% { opacity: 0.7; transform: translate(4px,-2px); }
+        90% { opacity: 0; }
+        91.5% { opacity: 0.6; transform: translate(-3px,1px); }
+        92% { opacity: 0; }
+        93% { opacity: 0.8; transform: translate(2px,-3px); }
+        94% { opacity: 0; }
+      }
+      @keyframes underlineGrow {
+        from { stroke-dashoffset: 700; }
+        to   { stroke-dashoffset: 0; }
+      }
+    </style>
+
+    <!-- scanline clip -->
+    <clipPath id="clip">
+      <rect x="0" y="0" width="800" height="160"/>
+    </clipPath>
+
+    <!-- glow filter -->
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="160" fill="#0d0d14"/>
+
+  <!-- scanlines -->
+  <g clip-path="url(#clip)">
+    <line class="scanline" x1="0" y1="10" x2="800" y2="10"/>
+    <line class="scanline" x1="0" y1="20" x2="800" y2="20"/>
+    <line class="scanline" x1="0" y1="30" x2="800" y2="30"/>
+    <line class="scanline" x1="0" y1="40" x2="800" y2="40"/>
+    <line class="scanline" x1="0" y1="50" x2="800" y2="50"/>
+    <line class="scanline" x1="0" y1="60" x2="800" y2="60"/>
+    <line class="scanline" x1="0" y1="70" x2="800" y2="70"/>
+    <line class="scanline" x1="0" y1="80" x2="800" y2="80"/>
+    <line class="scanline" x1="0" y1="90" x2="800" y2="90"/>
+    <line class="scanline" x1="0" y1="100" x2="800" y2="100"/>
+    <line class="scanline" x1="0" y1="110" x2="800" y2="110"/>
+    <line class="scanline" x1="0" y1="120" x2="800" y2="120"/>
+    <line class="scanline" x1="0" y1="130" x2="800" y2="130"/>
+    <line class="scanline" x1="0" y1="140" x2="800" y2="140"/>
+    <line class="scanline" x1="0" y1="150" x2="800" y2="150"/>
+  </g>
+
+  <!-- glitch layers -->
+  <text class="glitch-r glitch-anim-r" x="400" y="115" text-anchor="middle">IRIOME</text>
+  <text class="glitch-b glitch-anim-b" x="400" y="115" text-anchor="middle">IRIOME</text>
+
+  <!-- main text -->
+  <text class="base flicker" x="400" y="115" text-anchor="middle" filter="url(#glow)" fill="#c792ea">IRIOME</text>
+
+  <!-- animated underline -->
+  <line x1="100" y1="132" x2="700" y2="132"
+        stroke="#c792ea" stroke-width="2"
+        stroke-dasharray="600" stroke-dashoffset="600"
+        opacity="0.6"
+        class="underline-anim"/>
+
+  <!-- corner decorations -->
+  <polyline points="20,10 10,10 10,25" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="780,10 790,10 790,25" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="20,150 10,150 10,135" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="780,150 790,150 790,135" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.5"/>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0a0a14"/>
+      <stop offset="50%"  stop-color="#120820"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0a0a14" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#c792ea" stop-opacity="0.8"/>
+      <stop offset="70%"  stop-color="#00f5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a0a14" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0a0a14" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#ff2d78" stop-opacity="0.5"/>
+      <stop offset="60%"  stop-color="#c792ea" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0a0a14" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .tag { font-family: 'Courier New', monospace; font-size: 11px; fill: #c792ea; opacity: 0.5; }
+      .dot-anim { animation: blink 1.4s infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+    </style>
+  </defs>
+
+  <!-- bg -->
+  <rect width="900" height="200" fill="url(#bgGrad)"/>
+
+  <!-- grid lines horizontal -->
+  <line x1="0" y1="40"  x2="900" y2="40"  stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="0" y1="80"  x2="900" y2="80"  stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="0" y1="120" x2="900" y2="120" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="0" y1="160" x2="900" y2="160" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+
+  <!-- grid lines vertical -->
+  <line x1="150" y1="0" x2="150" y2="200" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="300" y1="0" x2="300" y2="200" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="450" y1="0" x2="450" y2="200" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="600" y1="0" x2="600" y2="200" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+  <line x1="750" y1="0" x2="750" y2="200" stroke="#c792ea" stroke-width="0.3" opacity="0.07"/>
+
+  <!-- glow orb center -->
+  <ellipse cx="450" cy="100" rx="250" ry="80" fill="#c792ea" opacity="0.04" filter="url(#softglow)"/>
+  <ellipse cx="450" cy="100" rx="120" ry="40" fill="#7b2fff" opacity="0.06" filter="url(#softglow)"/>
+
+  <!-- diagonal accent lines -->
+  <line x1="0"   y1="200" x2="180" y2="0"   stroke="#c792ea" stroke-width="0.6" opacity="0.12"/>
+  <line x1="50"  y1="200" x2="230" y2="0"   stroke="#00f5ff" stroke-width="0.4" opacity="0.08"/>
+  <line x1="900" y1="200" x2="720" y2="0"   stroke="#c792ea" stroke-width="0.6" opacity="0.12"/>
+  <line x1="850" y1="200" x2="670" y2="0"   stroke="#ff2d78" stroke-width="0.4" opacity="0.08"/>
+
+  <!-- top glowing line -->
+  <line x1="0" y1="3" x2="900" y2="3" stroke="url(#lineGrad)" stroke-width="2"/>
+  <!-- bottom glowing line -->
+  <line x1="0" y1="197" x2="900" y2="197" stroke="url(#lineGrad)" stroke-width="2"/>
+  <!-- mid accent line -->
+  <line x1="0" y1="100" x2="900" y2="100" stroke="url(#lineGrad2)" stroke-width="1"/>
+
+  <!-- hex decorations left -->
+  <polygon points="30,70 45,61 60,70 60,88 45,97 30,88" fill="none" stroke="#c792ea" stroke-width="1" opacity="0.25"/>
+  <polygon points="35,75 45,69 55,75 55,85 45,91 35,85" fill="#c792ea" opacity="0.06"/>
+  <!-- hex decorations right -->
+  <polygon points="840,70 855,61 870,70 870,88 855,97 840,88" fill="none" stroke="#00f5ff" stroke-width="1" opacity="0.25"/>
+  <polygon points="845,75 855,69 865,75 865,85 855,91 845,85" fill="#00f5ff" opacity="0.06"/>
+
+  <!-- corner brackets -->
+  <polyline points="15,15 5,15 5,5 15,5"    fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.6"/>
+  <polyline points="885,15 895,15 895,5 885,5" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.6"/>
+  <polyline points="15,185 5,185 5,195 15,195" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.6"/>
+  <polyline points="885,185 895,185 895,195 885,195" fill="none" stroke="#c792ea" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- small dots row -->
+  <circle cx="200" cy="170" r="2" fill="#c792ea" opacity="0.4"/>
+  <circle cx="212" cy="170" r="2" fill="#c792ea" opacity="0.4"/>
+  <circle cx="224" cy="170" r="2" fill="#c792ea" class="dot-anim"/>
+  <circle cx="676" cy="170" r="2" fill="#00f5ff" opacity="0.4"/>
+  <circle cx="688" cy="170" r="2" fill="#00f5ff" opacity="0.4"/>
+  <circle cx="700" cy="170" r="2" fill="#00f5ff" class="dot-anim"/>
+
+  <!-- code tags -->
+  <text class="tag" x="18" y="185">&lt;DevNaranjo /&gt;</text>
+  <text class="tag" x="730" y="185">v1.0 :: DAM_2025</text>
+
+  <!-- center label -->
+  <text font-family="'Courier New', monospace" font-size="12" fill="#c792ea" opacity="0.35" x="450" y="175" text-anchor="middle" letter-spacing="6">DEVELOPER · STUDENT · BUILDER</text>
+</svg>
