@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="/assets/banner.svg" width="100%" alt="banner"/>
-
 <img src="/assets/glitch-title.svg" width="600" alt="IRIOME"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=3000&pause=700&color=C792EA&center=true&vCenter=true&width=650&lines=Initializing+developer+profile...;const+dev+%3D+%7B+name%3A+%22Iriome%22+%7D%3B;Building+clean+and+scalable+code+%F0%9F%9A%80;while(true)+%7B+learn()%3B+build()%3B+grow()%3B+%7D" alt="Typing SVG" />
