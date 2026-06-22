@@ -32,39 +32,39 @@ dev = {
 
 **Lenguajes**
 
-<a href="https://github.com/mouredev/hello-java" title="Curso Java — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=java" height="50"/></a>
+<a href="https://www.java.com/" title="Java" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=java" height="50"/></a>
 &nbsp;
-<a href="https://github.com/mouredev/Hello-Python" title="Curso Python — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=py" height="50"/></a>
+<a href="https://www.python.org/" title="Python" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=py" height="50"/></a>
 &nbsp;
-<a href="https://www.youtube.com/watch?v=3nYLTiY5skU" title="Curso HTML — YouTube" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=html" height="50"/></a>
+<a href="https://developer.mozilla.org/es/docs/Web/HTML" title="HTML5" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=html" height="50"/></a>
 &nbsp;
-<a href="https://www.youtube.com/watch?v=hrxjBqZWsb0" title="Curso CSS — YouTube" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=css" height="50"/></a>
+<a href="https://developer.mozilla.org/es/docs/Web/CSS" title="CSS" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=css" height="50"/></a>
 &nbsp;
-<a href="https://github.com/mouredev/hello-javascript" title="Curso JavaScript — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=js" height="50"/></a>
+<a href="https://developer.mozilla.org/es/docs/Web/JavaScript" title="JavaScript" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=js" height="50"/></a>
 
 **Bases de datos**
 
-<a href="https://github.com/mouredev/hello-sql" title="Curso SQL/PostgreSQL — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=postgres" height="50"/></a>
+<a href="https://www.postgresql.org/" title="PostgreSQL" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=postgres" height="50"/></a>
 &nbsp;
-<a href="https://github.com/mouredev/hello-sql" title="Curso SQL/MySQL — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=mysql" height="50"/></a>
+<a href="https://www.mysql.com/" title="MySQL" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=mysql" height="50"/></a>
 &nbsp;
-<img src="https://skillicons.dev/icons?i=mongodb" height="50" title="MongoDB"/>
+<a href="https://www.mongodb.com/" title="MongoDB" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=mongodb" height="50"/></a>
 
 **Herramientas & entornos**
 
-<a href="https://github.com/mouredev/hello-git" title="Curso Git — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=git" height="50"/></a>
+<a href="https://git-scm.com/" title="Git" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=git" height="50"/></a>
 &nbsp;
-<a href="https://github.com/mouredev/hello-git" title="Curso GitHub — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=github" height="50"/></a>
+<a href="https://github.com/" title="GitHub" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=github" height="50"/></a>
 &nbsp;
-<a href="https://github.com/mouredev/hello-bash-shell" title="Curso Bash/Linux — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=linux" height="50"/></a>
+<a href="https://www.linux.org/" title="Linux" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=linux" height="50"/></a>
 &nbsp;
-<img src="https://skillicons.dev/icons?i=windows" height="50" title="Windows"/>
+<a href="https://www.microsoft.com/windows/" title="Windows" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=windows" height="50"/></a>
 &nbsp;
-<a href="https://github.com/mouredev/hello-bash-shell" title="Curso Bash — MoureDev" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=bash" height="50"/></a>
+<a href="https://www.gnu.org/software/bash/" title="Bash" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=bash" height="50"/></a>
 &nbsp;
-<img src="https://skillicons.dev/icons?i=idea" height="50" title="IntelliJ IDEA"/>
+<a href="https://www.jetbrains.com/idea/" title="IntelliJ IDEA" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=idea" height="50"/></a>
 &nbsp;
-<img src="https://skillicons.dev/icons?i=vscode" height="50" title="VS Code"/>
+<a href="https://code.visualstudio.com/" title="VS Code" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=vscode" height="50"/></a>
 
 </div>
 
